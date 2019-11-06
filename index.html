@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat&display=swap" rel="stylesheet">
+
+  <title>Survey</title>
+</head>
+<body>
+  <h1 id="title">Survey</h1>
+  <div id="content">
+    <p id="description">Please answer all questions honestly.</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Enter the name of the last person you thought about:</label><br/>
+      <input type="text" id="name">
+      <br/>
+
+      <label for="email" id="email-label">Enter the email address you had as a child:</label><br/>
+      <input type="email" id="email">
+      <br/>
+
+      <label for="number" id="number-label">Enter the best number between 1 and 50:</label><br/>
+      <input type="number" min="1" max="50" id="number">
+      <br/>
+
+      <label for="dropdown" id="dropdown-label">In relation to yourself, in which direction is the nearest exit?</label>
+      <input list="dropdown">
+      <datalist id="dropdown">
+        <option value="North">North</option>
+        <option value="East">East</option>
+        <option value="South">South</option>
+        <option value="West">West</option>
+        <option value="Northeast">Northeast</option>
+        <option value="Northwest">Northwest</option>
+        <option value="Southeast">Southeast</option>
+        <option value="Southwest">Southwest</option>
+      </datalist>
+      <br/>
+
+      <label for="feeling" id="radio-label">Are you content?</label><br/>
+      <input type="radio" name="feeling" id="feeling" value="yes" checked>Yes<br/>
+      <input type="radio" name="feeling" value="no">No
+      <br/>
+
+      <p>Select all that apply:</p>
+      <label for="fire"><input type="checkbox" name="conditions" value="fire">Fire</label><br/>
+      <label for="dirt"><input type="checkbox" name="conditions" value="dirt">Dirt</label><br/>
+      <label for="tape"><input type="checkbox" name="conditions" value="tape">Tape</label><br/>
+      <label for="stone"><input type="checkbox" name="conditions" value="stone">Stone</label><br/>
+      <label for="brick"><input type="checkbox" name="conditions" value="brick">Brick</label><br/>
+      <label for="glue"><input type="checkbox" name="conditions" value="glue">Glue</label><br/>
+      <label for="iron"><input type="checkbox" name="conditions" value="iron">Iron</label><br/>
+      <label for="thread"><input type="checkbox" name="conditions" value="thread">Thread</label><br/>
+      
+      <p>Describe the scene outside the nearest window:</p>
+      <textarea rows="4" cols="50" maxlength="1000"></textarea><br/>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+</body>
+</html>
